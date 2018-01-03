@@ -1,5 +1,5 @@
 ---
-title: "Pipeline Portability And Docker"
+title: "Portable Pipelines With Docker"
 teaching: 0
 exercises: 0
 questions:
@@ -9,6 +9,3 @@ objectives:
 keypoints:
 - "First key point."
 ---
-
-
-

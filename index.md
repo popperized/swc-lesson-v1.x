@@ -14,11 +14,6 @@ as Git. These “popperized” repositories are self-contained and can be
 easily shared (cloned via Git) so that others can replicate the 
 original results (see examples [here](https://github.com/popperized)).
 
-This lesson describes the experimentation protocol and the Popper CLI 
-tool; it gives examples from multiple domains showing how to follow 
-the protocol; and also shows how to use a CI system to continuously 
-validate Popperized experiments.
-
 > ## Prerequisites
 >
 > In this lesson we use the [Unix Shell](). Some previous experience 

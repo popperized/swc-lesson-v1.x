@@ -112,8 +112,15 @@ need to be available on your machine. Please visit
 <https://www.docker.com> to download and install the version 
 compatible with your system.
 
-> **NOTE**: In order to install Docker on your machine, you will be 
-> required to have root access privileges.
+Make sure you can run the `hello-world` example provided by Docker to 
+confirm your installation was successful. More information about 
+getting started and running hello-world can be found at 
+https://docs.docker.com/get-started/.
+
+> **NOTE**: Due to time constraints, we can't provide Docker 
+> installation support. We suggest contacting your system 
+> administrator or consulting the Docker documentation and forums if 
+> problems are encountered.
 
 # Python
 

@@ -30,42 +30,32 @@ executing the data generation step of a numerical weather prediction
 simulation:
 -->
 
-While one can manually execute these tasks, automating them by can 
-significantly reduce the amount of effort required by others (or 
-ourselves) to re-execute a pipeline. The [Popper CLI 
-tool](https://github.com/systemslab/popper) aids practitioners 
-(students and researchers) in implementing and automating pipelines by 
-writing shell scripts for each stage. In this lesson, you will learn 
-how to generate pipelines that are easier to re-execute, validate and 
-maintain.
-
-### The Popper Convention
-
-A list of high-level guidelines that make it easier to manage and 
-maintain a pipeline over time is the following:
-
- 1. For each stage of the scientific exploration pipeline being 
-    implemented, pick one or more tool from the DevOps toolkit (see 
-    below for what we refer with this).
- 2. Put all associated scripts in version control, in order to provide 
-    a self-contained repository.
- 3. As a pipeline evolves over time, document changes in the form of 
-    version control commits.
-
-We refer to this as the Popper Convention (more on [the paper on 
-Popper](https://github.com/systemslab/popper-paper/raw/master/paper/paper.pdf)). 
-In this lesson, we will make us of Bash, Git, TravisCI and Docker. 
-Following the convention and using the CLI tool will allow us to 
-generate pipelines that are easy to re-execute, validate and maintain 
-over time.
+While one can manually execute these tasks, automating them can not 
+only significantly reduce the amount of effort required by others (or 
+ourselves) to re-execute a pipeline but, more importantly, allow 
+others to have an explicit and easy to understand record of what were 
+the series of high-level steps that were executed and in which order. 
+The [Popper CLI tool](https://github.com/systemslab/popper) aids 
+practitioners (students and researchers) in implementing and 
+automating pipelines by writing shell scripts for each stage. In this 
+lesson, you will learn how to generate pipelines that are easier to 
+re-execute, validate and maintain.
 
 ### The DevOps Toolkit
 
-The list of tasks shown above (writing code, configuring an 
-environment, etc.) are  not unique to the scientific computing world 
-and in fact are carried out by software engineers on a day-to-day 
-basis. The following table shows a one-to-one task correspondence 
-between the two domains:
+As we will experience first-hand throughout this lesson, the more 
+complex a pipeline gets, the more the time we need to invest on issues 
+that are out of the scope of our domain. Things such as dealing with 
+multiple changes to code, managing distinct environment 
+configurations, handling parametrized executions (just to name a few) 
+increase significantly the cognitive load associated to the 
+implementation and maintenance of a pipeline.
+
+Fortunately, the list of tasks shown above (writing code, configuring 
+an environment, etc.) are  not unique to the scientific computing 
+world and in fact are carried out by software engineers on a 
+day-to-day basis. The following table shows a one-to-one task 
+correspondence between the two domains:
 
 | Scientific Exploration       | Software Project          |
 | ---------------------------- | ------------------------- |
@@ -77,18 +67,16 @@ between the two domains:
 
 Whereas a pipeline for a scientific exploration has the goal of 
 generating reproducible research, pipelines found in open source 
-software 
-[OSS](https://en.wikipedia.org/wiki/Open-source_software)/[DevOps](https://en.wikipedia.org/wiki/DevOps) 
-projects target "Software Reproducibility", i.e. systematically 
-reproduce bugs in order to have control over the quality of a software 
-project.
+software ([OSS](https://en.wikipedia.org/wiki/Open-source_software) 
+and [DevOps](https://en.wikipedia.org/wiki/DevOps)) projects target 
+"Software Reproducibility", i.e. systematically reproduce bugs in 
+order to have control over the quality of a software project.
 
-Not surprisingly, OSS/DevOps communities have generated tools free 
-services in order to make their life easier for maintaining a pipeline 
-over time. These set of tools is sometimes referred to as the [DevOps 
-toolbox](https://xebialabs.com/periodic-table-of-devops-tools/), with 
-multiple categories in it. The following a small sample of mainstream 
-tools:
+Not surprisingly, OSS/DevOps communities have created tools and 
+services whose goal is to ease the implementation and maintenance of 
+pipelines. This set of tools is sometimes referred to as the [DevOps 
+toolbox](https://xebialabs.com/periodic-table-of-devops-tools/). The 
+following is a small sample of some mainstream tools, by category:
 
   * Source control. [Git](http://git-scm.com), 
     [Svn](https://subversion.apache.org) and 
@@ -111,13 +99,13 @@ tools:
 
   * Dataset Management. While it is possible to store data in a code 
     repository, traditional VCS tools such as Git were not designed to 
-    store large binary files. A proper artifact repository client or 
-    dataset management tool can take care of handling data 
-    dependencies. Examples are [Apache 
-    Archiva](https://archiva.apache.org), 
+    store large binary files. A proper artifact repository or dataset 
+    management tool can take care of handling data dependencies. 
+    Examples are [Apache Archiva](https://archiva.apache.org), 
     [Git-LFS](https://www.nmc-probe.org), 
-    [Datapackages](http://frictionlessdata.io/data-packages/) or 
-    [Artifactory](https://www.jfrog.com/artifactory). 
+    [Datapackages](http://frictionlessdata.io/data-packages/), 
+    [Artifactory](https://www.jfrog.com/artifactory), 
+    [ckan.org](https://ckan.org) and [data.world](https://data.world). 
 
   * Data Analysis and Visualization. [Jupyter](http://jupyter.org) 
     notebooks run as a web-based application. It facilitates the 
@@ -138,3 +126,23 @@ tools:
     Alternatives to Travis CI are [CircleCI](https://circleci.com) and 
     [CodeShip](https://codeship.com). Other self-hosted solutions 
     exist such as [Jenkins](http://jenkins-ci.org).
+
+### The Popper Convention
+
+A list of high-level guidelines that make it easier to manage and 
+maintain a pipeline over time is the following:
+
+ 1. For each stage of the scientific exploration pipeline being 
+    implemented, pick one or more tool from the DevOps toolkit (see 
+    below for what we refer with this).
+ 2. Put all associated scripts in version control, in order to provide 
+    a self-contained repository.
+ 3. As a pipeline evolves over time, document changes in the form of 
+    version control commits.
+
+We refer to this as the Popper Convention (more on [the paper on 
+Popper](https://github.com/systemslab/popper-paper/raw/master/paper/paper.pdf)). 
+In this lesson, we will make us of Bash, Git, TravisCI and Docker. 
+Following the convention and using the CLI tool will allow us to 
+generate pipelines that are easy to re-execute, validate and maintain 
+over time.

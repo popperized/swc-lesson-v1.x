@@ -7,7 +7,15 @@ questions:
 objectives:
 - "Introduce the audience to the practical aspects of reproducibility."
 keypoints:
-- "First key point."
+- "Scientific exploration pipelines can be recasted as software 
+  implementation and maintenance pipelines."
+- "Software implementation and maintenance pipelines use sophisticated 
+  and mature DevOps tools with large user communities in industry."
+- "DevOps tools include (but are not limited to) source code control, 
+  package managers, dataset managers, data analysis and visualization 
+  tools, and continuous integration services"
+- "Popper is a convention that enables and simplifies the use of 
+  DevOps tools for scientific exploration pipelines."
 ---
 
 Many scientific exploration pipelines have the following structure:

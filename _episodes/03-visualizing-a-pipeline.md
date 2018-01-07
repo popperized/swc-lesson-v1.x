@@ -5,9 +5,13 @@ exercises: 0
 questions:
 - "How can I quickly get a sense of what a pipeline does?"
 objectives:
-- "Show how to ."
+- "Implement and visualize an end-to-end simple experimentation 
+  pipeline."
 keypoints:
-- "First key point."
+- "The `popper` command allows easy visualization of what a pipeline 
+  does."
+- "Top-level structure of a pipeline can be arbitrarily extended by 
+  scripts of any language."
 ---
 
 At the end of the previous section we learned how to create a 
@@ -20,10 +24,6 @@ emissions from fossil fuels since 1751, and obtain the mean of per
 capita emissions.
 
 ```bash
-mkdir episode-3
-cd episode-3
-git init
-popper init
 popper init co2-emissions
 $ tree .
 .
@@ -236,6 +236,24 @@ scripts/validate_output.py data/global_per_capita_mean.csv
 
 # [wf] generate markdown table
 scripts/get_mdown_table.py data/global_per_capita_mean.csv
+```
+
+### Test and Commit
+
+After we write all the commands above, we can test them by running 
+`popper check`:
+
+```bash
+cd pipelines/co2-emissions
+popper check
+```
+
+once all runs OK, we can then commit to the repository:
+
+```bash
+cd ../../
+git add .
+git commit -m "adding co2-emissions pipeline"
 ```
 
 # Visualize a Pipeline

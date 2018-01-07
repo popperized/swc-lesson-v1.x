@@ -5,9 +5,12 @@ exercises: 0
 questions:
 - "How can I automate a scientific exploration pipeline?"
 objectives:
-- "Intro to Popper Pipelines."
+- "Introduce reader to the concept of Popper pipelines."
 keypoints:
-- "First key point."
+- 'The `popper` command line interface allows convenient creation of 
+  “popperized” pipelines with scaffolding that can be tested from the 
+  beginning.'
+- 'Popper pipelines can be shared via github (or similar services)'
 ---
 
 We first need to install the CLI tool by following [these 

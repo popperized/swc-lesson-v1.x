@@ -5,9 +5,18 @@ exercises: 0
 questions:
 - 'How can I check the integrity of a pipeline over time?'
 objectives:
-- "Show how to ."
+- "Show how to configure a continous integration (CI) system to 
+  validate a Popper pipeline."
 keypoints:
-- "First key point."
+- "`popper` CLI allows easy local testing as well as easy testing by 
+  common free, online testing services (aka “continual integration” or 
+  “CI” services), including TravisCI, CircleCI, and Jenkins."
+- "The three possible outcomes of a pipeline test are “FAIL” (the 
+  pipeline is broken), “PASS” (the pipeline executed successfully), 
+  and “GOLD” (the result of the pipeline’s execution passed 
+  validation)."
+- "Local testing stores test results in `popper_status` and in 
+  `popper_logs` directory."
 ---
 
 By following a convention for structuring the files of a project, an 

@@ -60,7 +60,7 @@ correspondence between the two domains:
 | Scientific Exploration       | Software Project          |
 | ---------------------------- | ------------------------- |
 | Experiment code              | Source code               |
-| Input data                   | Test examples             |
+| Input / output data          | Test data                 |
 | Analysis and Visualization   | Test analysis             |
 | Validation                   | Regression testing        |
 | Manuscript / notebook        | Documentation / reports   |

@@ -72,6 +72,7 @@ git commit -m 'adding myexp scaffold'
 Run popper check:
 
 ```bash
+cd pipelines/myexp
 popper check
 ```
 
@@ -84,7 +85,7 @@ runs a command inside an `alpine-3.4` container.
 Once a pipeline is checked, one can show the logs:
 
 ```bash
-ls -l pipelines/myexp/popper_logs
+ls -l popper_logs
 ```
 
 ### Adding Project to GitHub

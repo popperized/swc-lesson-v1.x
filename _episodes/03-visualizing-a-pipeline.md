@@ -184,16 +184,16 @@ import csv
 import sys
 
 fname = sys.argv[1]
+fout = fname.replace('.csv', '') + '.md'
 
-
-with open(fname, 'r') as fi:
+with open(fname, 'r') as fi, open(fout, 'w') as fo:
     r = csv.reader(fi)
 
-    print('| Year | Mean |')
-    print('| ---- | ---- |')
+    fo.write('| Year | Mean |\n')
+    fo.write('| ---- | ---- |\n')
 
     for row in r:
-        print('| {} |'.format(' | '.join(row)))
+        fo.write('| {} |\n'.format(' | '.join(row)))
 ```
 
 We would also like to ensure that we generated data as we expected it 
@@ -248,7 +248,8 @@ cd pipelines/co2-emissions
 popper check
 ```
 
-once all runs OK, we can then commit to the repository:
+Once we verify that the pipeline runs OK, we can then commit to the 
+repository:
 
 ```bash
 cd ../../

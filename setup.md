@@ -85,25 +85,19 @@ manager of the corresponding distribution to install it.
 
 # Popper
 
-To get started with the CLI tool, download Popper from 
-[popper/releases](https://github.com/systemslab/popper/releases). Note
-that we have only binaries for macOS and Linux. Once downloaded, 
-uncompress and place the binary in a folder that is  included in your 
-`$PATH` (e.g. `/usr/local/bin`). For Windows, we recommend using 
-Popper with the [Windows Subsystem for 
+To get started with the CLI tool, please install Popper by following 
+the instructions on [this 
+page](https://github.com/systemslab/popper/tree/master/cli#install). 
+Note that we have only thoroughly tested on macOS and Linux. For 
+Windows, we recommend using Popper with the [Windows Subsystem for 
 Linux](https://msdn.microsoft.com/en-us/commandline/wsl/install-win10). 
 
 To get an overview and list of commands check out the command line 
 help:
 
 ```bash
-popper help
+popper --help
 ```
-
-In this lesson we will start by going over the quickstart guide 
-[here](http://popper.readthedocs.io/en/latest/protocol/getting_started.html#quickstart-guide) 
-on a step-by-step basis. Then we will move further implement 
-repeatable Popper pipelines using Docker.
 
 # Docker
 
@@ -129,6 +123,12 @@ general-purpose programming as well. For this lesson, a minimal
 installation of **Python 2.7** is required, which is available by 
 default on macOS and Linux, as well as on unix terminal emulators for 
 Windows such as Cygwin.
+
+## Virtualenv
+
+We use `virtualenv` in one of the episodes of this lesson. To install 
+it, you can follow instructions 
+[here](https://packaging.python.org/guides/installing-using-pip-and-virtualenv/).
 
 # Text Editor
 

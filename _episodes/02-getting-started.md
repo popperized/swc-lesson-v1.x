@@ -18,7 +18,7 @@ instructions](https://github.com/systemslab/popper/tree/master/popper#install).
 Show the available commands:
 
 ```bash
-popper help
+popper --help
 ```
 
 Show which version you installed:
@@ -27,10 +27,9 @@ Show which version you installed:
 popper version
 ```
 
-> **NOTE**: this exercise was written using 0.5
+> **NOTE**: this exercise was written using 1.0.0
 
-Create a project repository (if you are not familiar with git, look 
-[here](https://www.learnenough.com/git-tutorial)):
+Create a project repository:
 
 ```bash
 mkdir mypaper
@@ -76,14 +75,8 @@ Run popper check:
 
 ```bash
 cd pipelines/myexp
-popper check
+popper run
 ```
-
-> **NOTE:** By default, `popper check` runs all commands directly on 
-the host. We recommend running an isolated environment. In order to do 
-this, one can create a pipeline using the `--env` flag of the `popper 
-init` command. For example, `popper init <pipeline> --env=alpine-3.4` 
-runs a command inside an `alpine-3.4` container.
 
 Once a pipeline is checked, one can show the logs:
 

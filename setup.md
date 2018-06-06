@@ -124,12 +124,6 @@ installation of **Python 2.7** is required, which is available by
 default on macOS and Linux, as well as on unix terminal emulators for 
 Windows such as Cygwin.
 
-## Virtualenv
-
-We use `virtualenv` in one of the episodes of this lesson. To install 
-it, you can follow instructions 
-[here](https://packaging.python.org/guides/installing-using-pip-and-virtualenv/).
-
 # Text Editor
 
 When you're writing code, it's nice to have a text editor that is 

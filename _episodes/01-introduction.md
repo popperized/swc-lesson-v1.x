@@ -31,12 +31,8 @@ all) of the following tasks:
     environments.
   * Writing documentation or any type of manuscript (tech reports or 
     scholarly articles).
-
-<!--
-The following shows an example of the series of steps involved in 
-executing the data generation step of a numerical weather prediction 
-simulation:
--->
+  * Archiving particular versions of a pipeline so it can be 
+    referenced in the future (e.g. by using a DOI generation service).
 
 While one can manually execute these tasks, automating them can not 
 only significantly reduce the amount of effort required by others (or 

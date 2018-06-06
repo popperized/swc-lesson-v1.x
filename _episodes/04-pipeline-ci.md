@@ -36,12 +36,12 @@ configuration files for multiple CI systems. The syntax of this
 command is the following:
 
 ```bash
-popper ci <system-name>
+popper ci --service <service-name>
 ```
 
-Where `<system-name>` is the name of CI system (see `popper ci --help` 
-to get a list of supported systems). In the following, we show how to 
-link github with some of the supported CI systems.
+Where `<service-name>` is the name of CI service (see `popper ci 
+--help` to get a list of supported systems). In the following, we show 
+how to link github with some of the supported CI systems.
 
 ### TravisCI
 
@@ -54,7 +54,7 @@ Once the project is registered on Travis, we proceed to generate a
 
 ```bash
 cd my-popper-repo/
-popper ci travis
+popper ci --service travis
 ```
 
 And commit the file:
@@ -91,11 +91,13 @@ what we do for TravisCI (see above):
 
     ```bash
     cd my-popper-repo/
-    popper ci circleci
+    popper ci --service circle
     git add .circleci
     git commit -m 'Adds CircleCI config file'
     git push
     ```
+
+<!--
 
 ### Jenkins
 
@@ -125,6 +127,8 @@ for an example of how to use it. We also host an instance of this
 image at <http://ci.falsifiable.us> and can provide accounts for users 
 to make use of this Jenkins server (for an account, send an email to 
 <ivo@cs.ucsc.edu>).
+
+-->
 
 ## CI Functionality
 
@@ -158,14 +162,14 @@ cases where one is testing locally. To execute test locally:
 
 ```bash
 cd my/paper/repo
-popper check myexperiment
+popper run myexperiment
 
-Popper check started
+Popper run started
 Running stage setup.sh ....
 Running stage run.sh ................
 Running stage validate.sh .
 Running stage teardown.sh ..
-Popper check finished: SUCCESS
+Popper run finished: SUCCESS
 ```
 
 The status of the execution is stored in the `popper_status` file, 

@@ -38,11 +38,22 @@ with the service. To do so, follow these steps (copied from
  3. Select the OAuth scopes you need (you need at least 
     `deposit:write` and `deposit:actions`).
 
-To archive and generate a DOI for your repository, after committing to 
-Git all your changes, do the following:
+To archive and generate a DOI for your repository, we first add 
+metadata associated to our repository:
+
+```
+popper metadata --add title='Your Title'
+popper metadata --add author1='First Last, first.last@gmail.com, Affiliation'
+popper metadata --add abstract='A short description of the your repo'
+popper metadata --add keywords='comma, separated, keywords'
+```
+
+The above needs to be modified to reflect the actual information 
+related to your repository. After adding the above metadata values and 
+committing to Git the changes, do the following:
 
 ```bash
-export POPPER_GITHUB_ZENODO_API_TOKEN=<your-token>
+export POPPER_ZENODO_API_TOKEN=<your-token>
 popper archive --service zenodo
 ```
 

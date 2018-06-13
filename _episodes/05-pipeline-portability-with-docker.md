@@ -132,16 +132,15 @@ Once you download this, you can look at the available stages:
 popper stages docker-data-science
 ```
 
-You can see that there is a `setup` phase that builds a Docker 
+You can see that there is a `build-docker-image` stage that builds a Docker 
 container image by using the contents of the `docker/` folder. To 
-learn more about how images are build, see 
+learn more about how Docker images are built, see 
 [here](https://docs.docker.com/engine/reference/commandline/build). To 
 finalize, let's run it on our machine:
 
 ```bash
 popper run docker-data-science
 ```
-
 
 And as you can see, the above succeeds (as long as you have a working 
 version of Docker). For completeness, let's remove the first (not 

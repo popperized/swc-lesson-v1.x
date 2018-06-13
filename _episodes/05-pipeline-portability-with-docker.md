@@ -77,10 +77,10 @@ python scripts/compare-output.py
 ```
 
 lastly, we update the popper pipeline so that it now includes these 
-two stages:
+three stages:
 
 ```bash
-popper stages --set=run,generate-figures data-science-no-stages
+popper stages --set=run,generate-figures,validate data-science-no-stages
 ```
 
 We now try to run it:

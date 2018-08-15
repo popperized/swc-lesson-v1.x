@@ -114,7 +114,12 @@ can do this with the following Python script:
 import csv
 import sys
 
-from itertools import izip_longest
+try:
+    # Python 3
+    from itertools import zip_longest
+except ImportError:
+    # Python 2
+    from itertools import izip_longest as zip_longest
 
 fname = sys.argv[1]
 group_size = int(sys.argv[2])
@@ -123,7 +128,7 @@ fout = fname.replace('_clean.csv', '') + '_per_capita_mean.csv'
 
 def grouper(iterable, n, fillvalue=None):
     args = [iter(iterable)] * n
-    return izip_longest(*args, fillvalue=fillvalue)
+    return zip_longest(*args, fillvalue=fillvalue)
 
 
 with open(fname, 'r') as fi, open(fout, 'w') as fo:

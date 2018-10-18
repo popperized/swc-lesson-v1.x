@@ -27,7 +27,7 @@ Show which version you installed:
 popper version
 ```
 
-> **NOTE**: this exercise was written using 1.0.0
+> **NOTE**: this exercise was written assuming 1.1.0 (or greater)
 
 Create a project repository:
 
@@ -53,35 +53,38 @@ git commit -m 'adds .popper.yml file'
 Initialize pipeline using `init` (scaffolding):
 
 ```bash
-popper init myexp
+popper init --stages one,two,three myfirstpipe
 ```
 
 Show what this did:
 
 ```bash
-ls -l pipelines/myexp
+ls -l pipelines/myfirstpipe
 ```
 
 Commit the "empty" pipeline:
 
 ```bash
-git add pipelines/myexp
-git commit -m 'adding myexp scaffold'
+git add pipelines/myfirstpipe
+git commit -m 'adding my first pipeline (skeleton)'
 ```
 
 ### Executing a pipeline
 
-Run popper check:
+Run `popper run`:
 
 ```bash
-cd pipelines/myexp
+popper run myfirstpipe
+
+# or
+cd pipelines/myfirstpipe
 popper run
 ```
 
-Once a pipeline is checked, one can show the logs:
+Once a pipeline is executed, one can show the logs:
 
 ```bash
-ls -l popper_logs
+ls -l popper/
 ```
 
 ### Adding Project to GitHub

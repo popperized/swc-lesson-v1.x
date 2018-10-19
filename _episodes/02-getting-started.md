@@ -14,7 +14,7 @@ keypoints:
 ---
 
 We first need to install the CLI tool by following [these 
-instructions](https://github.com/systemslab/popper/tree/master/popper#install). 
+instructions](https://github.com/systemslab/popper/tree/master/cli#install). 
 Show the available commands:
 
 ```bash

@@ -99,7 +99,7 @@ create a folder to store all our scripts (other than the Bash stage
 files) for this pipeline:
 
 ```bash
-mkdir pipelines/myfirstpipe/scripts
+mkdir pipelines/co2-emissions/scripts
 ```
 
 Now, use your favorite editor to create a Python file named 
@@ -133,7 +133,7 @@ with open(fname, 'r') as fi, open(fout, 'w') as fo:
 Let's make it executable so it can be invoked directly:
 
 ```bash
-chmod +x pipelines/myfirstpipe/scripts/add_zeros.py
+chmod +x pipelines/co2-emissions/scripts/add_zeros.py
 ```
 
 And, lastly, let's invoke it from the `get-data.sh` stage:
@@ -180,7 +180,7 @@ set -ex
 scripts/get_mean.py data/global_clean.csv 5
 ```
 
-Where the content of the `pipelines/myfirstpipe/scripts/get_mean.py` 
+Where the content of the `pipelines/co2-emissions/scripts/get_mean.py` 
 file is the following:
 
 ```python
@@ -255,7 +255,7 @@ scripts/validate_output.py data/global_per_capita_mean.csv
 scripts/get_mdown_table.py data/global_per_capita_mean.csv
 ```
 
-The `pipelines/myfirstpipe/scripts/validate_output.py` file looks 
+The `pipelines/co2-emissions/scripts/validate_output.py` file looks 
 like:
 
 ```python

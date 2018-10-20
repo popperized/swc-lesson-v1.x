@@ -157,7 +157,7 @@ git add .
 git commit -m 'Adds a dockerized data science pipeline'
 ```
 
-### Additional Virtualization Tools
+### Additional Portability Tools
 
 In addition to Docker, other tools that can help to create portable 
 pipelines exist, depending on your requirements:

@@ -4,8 +4,15 @@ title: Setup
 root: .
 ---
 
-You need to have the following software installed on your computer to
-follow this lesson.
+For this lesson, you need to have 
+[Bash](http://swcarpentry.github.io/shell-novice), 
+[Git](http://swcarpentry.github.io/git-novice), 
+[Python](http://swcarpentry.github.io/python-novice-inflammation), 
+[Docker](https://ome.github.io/training-docker/) and Popper installed 
+on your system. If you have completed the [Software Carpentry 
+lesson](https://software-carpentry.org/) for any of these, you do not 
+need to do the setup again. Below, you will find instructions on how 
+to install each of these tools.
 
 # Bash
 
@@ -109,7 +116,7 @@ compatible with your system.
 Make sure you can run the `hello-world` example provided by Docker to 
 confirm your installation was successful. More information about 
 getting started and running hello-world can be found at 
-https://docs.docker.com/get-started/.
+<https://docs.docker.com/get-started>.
 
 > **NOTE**: Due to time constraints, we can't provide Docker 
 > installation support. We suggest contacting your system 
@@ -136,6 +143,4 @@ hitting Return to return to the shell.
 
 An easier to use editor available on all platforms is 
 [`nano`](https://en.wikipedia.org/wiki/GNU_nano). It is available by 
-default on macOS and Linux. See the [Git installation]() video 
-tutorial for an example on how to open nano. It should be 
-pre-installed.
+default on macOS and Linux.

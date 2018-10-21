@@ -1,6 +1,6 @@
 ---
 title: "Continuous Validation of Pipelines"
-teaching: 0
+teaching: 10
 exercises: 0
 questions:
 - 'How can I check the integrity of a pipeline over time?'

@@ -1,6 +1,6 @@
 ---
 title: "Popper Pipelines"
-teaching: 0
+teaching: 15
 exercises: 0
 questions:
 - "How can I automate a scientific exploration pipeline?"

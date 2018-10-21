@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-teaching: 0
+teaching: 35
 exercises: 0
 questions:
 - "How can I generalize the structure of my scientific explorations?"

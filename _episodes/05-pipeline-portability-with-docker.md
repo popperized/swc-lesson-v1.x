@@ -1,6 +1,6 @@
 ---
 title: "Creating Portable Pipelines"
-teaching: 0
+teaching: 20
 exercises: 0
 questions:
 - 'How can I easily run a pipeline on other machines?'

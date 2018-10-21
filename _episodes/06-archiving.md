@@ -1,6 +1,6 @@
 ---
 title: "Archiving and DOIs"
-teaching: 0
+teaching: 15
 exercises: 0
 questions:
 - 'How can I archive and obtain DOIs for my project?'

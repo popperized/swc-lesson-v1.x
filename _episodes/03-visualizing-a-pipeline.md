@@ -308,15 +308,13 @@ with open(fname, 'r') as fi, open(fout, 'w') as fo:
 Let's test the entire pipeline by running `popper run`:
 
 ```bash
-cd pipelines/co2-emissions
-popper run
+popper run co2-emissions
 ```
 
 Once we verify that the pipeline runs OK, we can then commit to the 
 repository:
 
 ```bash
-cd ../../
 git add .
 git commit -m "adding co2-emissions pipeline"
 ```
@@ -347,15 +345,21 @@ install the [`graphviz`](https://graphviz.gitlab.io/) package and
 execute:
 
 ```bash
-popper workflow co2-emissions | dot -T png -o wf.png | open wf.png
+popper workflow co2-emissions | dot -T png -o wf.png
 ```
 
-Alternatively you can use the <http://www.webgraphviz.com/> website to 
-generate a graph by copy-pasting the output of the `popper workflow` 
-command.
+The above generates a `wf.png` file containing the workflow for this 
+pipeline. Alternatively you can use the <http://www.webgraphviz.com/> 
+website to generate a graph by copy-pasting the output of the `popper 
+workflow` command.
 
 > ## Get The Pipeline
 >
 > The pipeline we created in this example is available in [this 
-> repo](https://github.com/popperized/swc-lesson-pipelines).
+> repo](https://github.com/popperized/swc-lesson-pipelines). To add it 
+> to your repository, you can run
+>
+> ```bash
+> popper add popperized/swc-lesson-pipelines/co2-emissions
+> ```
 {: .callout}

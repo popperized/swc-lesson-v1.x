@@ -3,12 +3,21 @@ title: "Creating Portable Pipelines"
 teaching: 20
 exercises: 0
 questions:
-- 'How can I easily run a pipeline on other machines?'
+- 'How can I verify that a pipeline can run on other machines?'
 objectives:
-- "Show how to generate portable pipelines using virtualization 
-  technologies."
+- "Show how to create portable pipelines using virtualization 
+  technology and modern package managers."
 keypoints:
-- "First key point."
+- "If a pipeline has dependencies on software or data, it will fail if 
+  we don't download and install these dependencies as part of the 
+  execution of a pipeline."
+- "Virtualization technologies at the language-, OS- and 
+  hardware-level can be used to install code in a repeatable and 
+  portable way."
+- "Testing a pipeline on a CI service is an effective way of checking 
+  whether a pipeline is portable. If it runs OK in our machine, but it 
+  fails on the CI server, this is likely due to a dependency we are 
+  not explicitly installing/dowloading in our pipeline."
 ---
 
 In the previous two sections we worked with a pipeline that has few 

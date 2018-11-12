@@ -5,9 +5,18 @@ exercises: 0
 questions:
 - 'How can I archive and obtain DOIs for my project?'
 objectives:
-- ""
+- "Show how the `popper` command can be used to upload a snapshot of 
+  our repository."
 keypoints:
-- "First key point."
+- "Not all the files in a repository can be added to Git, especially 
+  if they are large."
+- "In addition, input and output files that are part of a particular 
+  execution of a pipeline might be better placed elsewhere."
+- "The `popper` command integrates with Zenodo and Figshare, two 
+  populare archiving services that can be used to upload large(ish) 
+  files."
+- "In addition, this functionality allows us to publish archives and 
+  obtain a DOI for the archive associated to our project."
 ---
 
 At some point during our research, we will likely reach a milestone 

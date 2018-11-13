@@ -124,7 +124,7 @@ following is a small sample of some mainstream tools, by category:
     visualization such as [Paraview](http://paraview.org) and 
     [Gephi](https://gephi.org) tools can also fit in this category.
 
-  * Continous Integration. [Travis CI](https://travis-ci.org/) is an 
+  * Continuous Integration. [Travis CI](https://travis-ci.org/) is an 
     open-source, hosted, distributed continuous integration service 
     used to build and test software projects hosted at GitHub. 
     Alternatives to Travis CI are [CircleCI](https://circleci.com) and 
@@ -139,8 +139,9 @@ maintain a pipeline over time is the following:
  1. For each stage of the scientific exploration pipeline being 
     implemented, pick one or more tool from the DevOps toolkit (see 
     below for what we refer with this).
- 2. Put all associated scripts in version control, in order to provide 
-    a self-contained repository.
+ 2. Write portable scripts for each stage of the pipeline, and put all 
+    of them in version control, in order to provide a self-contained 
+    repository.
  3. As a pipeline evolves over time, document changes in the form of 
     version control commits.
 
